@@ -4,9 +4,9 @@
 function calculadorNotas (){
     let count = 0;
     for (let i = 1; i <= 6; i++){
-        notas = parseInt( prompt ("Ingresar nota #" + i + ":") );
+        notas = parseFloat ( prompt ("Ingresar nota #" + i + ":") );
         while (notas < 0 || notas > 100){
-            notas = parseInt (prompt("Valor incorrecto, volver a ingresar la nota #" + i + ":"));
+            notas = parseFloat (prompt("Valor incorrecto, volver a ingresar la nota #" + i + ":"));
         }
             count += notas;
         
